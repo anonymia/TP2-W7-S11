@@ -61,6 +61,14 @@ $ heroku config:set DB_PORT=<port>
 $ heroku config:set DB_DATABASE=<database>
 $ heroku config:set DB_USERNAME=<username>
 $ heroku config:set DB_PASSWORD=<password>
+$ heroku config:set MAIL_MAILER=smtp
+$ heroku config:set MAIL_HOST=smtp.gmail.com
+$ heroku config:set MAIL_PORT=587
+$ heroku config:set MAIL_USERNAME=<username>@gmail.com
+$ heroku config:set MAIL_PASSWORD=<password>
+$ heroku config:set MAIL_ENCRYPTION=TLS
+$ heroku config:set MAIL_FROM_ADDRESS=<username>@gmail.com
+$ heroku config:set MAIL_FROM_NAME="TP2-W7-S11 2402001636"
 $ heroku config:set NOCAPTCHA_SITEKEY=<sitekey>
 $ heroku config:set NOCAPTCHA_SECRET=<secretkey>
 $ heroku run php artisan migrate
