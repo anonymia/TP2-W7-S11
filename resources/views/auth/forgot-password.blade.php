@@ -26,6 +26,12 @@
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
             </div>
 
+            <!-- Captcha -->
+            <div class="mt-8">
+                {!! NoCaptcha::renderJs() !!}
+                {!! NoCaptcha::display() !!}
+            </div>
+
             <div class="flex items-center justify-end mt-6">
                 <x-button>
                     {{ __('Email Password Reset Link') }}

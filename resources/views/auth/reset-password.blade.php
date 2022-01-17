@@ -38,6 +38,12 @@
                                     name="password_confirmation" required />
             </div>
 
+            <!-- Captcha -->
+            <div class="mt-8">
+                {!! NoCaptcha::renderJs() !!}
+                {!! NoCaptcha::display() !!}
+            </div>
+
             <div class="flex items-center justify-end mt-6">
                 <x-button>
                     {{ __('Reset Password') }}
